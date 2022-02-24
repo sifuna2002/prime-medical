@@ -1,0 +1,139 @@
+.App {
+    text-align: center;
+}
+
+.box {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background-image: url(./bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.shape {
+    background: rgb(7, 197, 245);
+    height: 20%;
+    width: 60%;
+    border-radius: 0 0 40px 40px;
+    position: absolute;
+    right: 0;
+    top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.shape>h1 {
+    color: red;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.shape>h1>em {
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 10px;
+    margin-top: 20px;
+}
+
+.box img {
+    width: 40%;
+    object-fit: contain;
+}
+
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+    h1,
+    h2 {
+        font-size: 1.5em;
+    }
+}
+
+.App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .shape {
+        height: 30%;
+    }
+    .ellipse {
+        height: 400px;
+        height: 400px;
+    }
+    .shape>h1 {
+        color: red;
+        font-size: 30px;
+    }
+    .shape>h1>em {
+        color: #ffffff;
+        font-size: 30px;
+        margin-top: 5px;
+    }
+    .shape {
+        background: rgb(7, 197, 245);
+        height: 20%;
+        width: 60%;
+        border-radius: 0 0 40px 40px;
+        display: flex;
+        position: absolute;
+        right: 0;
+        top: 80px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+
+.ellipse {
+    background-color: rgb(141, 206, 226);
+    height: 150px;
+    width: 200px;
+    border-radius: 50% 50% 0 50%;
+    position: absolute;
+    right: 0;
+    bottom: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ellipse h1 {
+    color: white;
+    font-size: 15px;
+    margin: 20px;
+}
+
+em {
+    font-weight: bold;
+}
